@@ -267,6 +267,6 @@ Eine passende Open-Source-Lizenz kann je nach Veröffentlichungsziel ergänzt we
 
 Weitere Informationen, Quellcode und Updates befinden sich im GitHub-Repository.
 
-GitHub: `<GITHUB-LINK>`
+GitHub: `https://github.com/Ragnaron12345`
 LinkedIn: `www.linkedin.com/in/maxim-johannson`
 E-Mail: `johannsonmaxim@gmail.com`
