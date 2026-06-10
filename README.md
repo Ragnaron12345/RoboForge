@@ -161,7 +161,7 @@ ESP32 Wetterstation mit OLED und DHT22
 Beispiel für eine Beschreibung:
 
 ```text
-Eine einfache Wetterstation für ein Lernprojekt. Das System soll Temperatur und Luftfeuchtigkeit mit einem DHT22-Sensor messen und die Werte auf einem kleinen OLED-Display anzeigen. Für das OLED-Display soll neben dem Gehäuse eine separate Halterung bzw. ein eigener Standfuß als OpenSCAD-Modell erzeugt werden.
+Eine einfache Wetterstation für ein Lernprojekt. Das System soll Temperatur und Luftfeuchtigkeit nur mit einem DHT22-Sensor messen und die Werte auf einem kleinen OLED-Display anzeigen. Für das OLED-Display soll neben dem Gehäuse eine separate Halterung bzw. ein eigener Standfuß als OpenSCAD-Modell erzeugt werden.
 ```
 
 Robo Forge erstellt daraus automatisch einen Projektordner mit Dokumentation, Code, Wokwi-Dateien, OpenSCAD-Modell und PDF-Bericht.
