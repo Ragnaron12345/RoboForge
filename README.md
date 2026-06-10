@@ -155,13 +155,13 @@ http://127.0.0.1:8000
 Beispiel für einen Projekttitel:
 
 ```text
-Arduino Roboterarm mit Greifer und 4 Servos
+ESP32 Wetterstation mit OLED und DHT22
 ```
 
 Beispiel für eine Beschreibung:
 
 ```text
-Ein einfacher Roboterarm für ein Lernprojekt. Der Arm soll mehrere Servos verwenden, einen Greifer besitzen und über Arduino gesteuert werden. Ziel ist eine verständliche Dokumentation mit Komponentenliste, Verdrahtung, Code-Skelett und 3D-Druckteilen.
+Eine einfache Wetterstation für ein Lernprojekt. Das System soll Temperatur und Luftfeuchtigkeit mit einem DHT22-Sensor messen und die Werte auf einem kleinen OLED-Display anzeigen. Ziel ist eine verständliche Projektdokumentation mit Komponentenliste, Verdrahtung, Code-Skelett, Wokwi-Schaltplan, OpenSCAD-Gehäuseentwurf und PDF-Bericht.
 ```
 
 Robo Forge erstellt daraus automatisch einen Projektordner mit Dokumentation, Code, Wokwi-Dateien, OpenSCAD-Modell und PDF-Bericht.
