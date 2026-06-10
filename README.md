@@ -155,13 +155,13 @@ http://127.0.0.1:8000
 Beispiel für einen Projekttitel:
 
 ```text
-ESP32 Wetterstation mit OLED und DHT22
+Hund
 ```
 
 Beispiel für eine Beschreibung:
 
 ```text
-Eine einfache Wetterstation mit ESP32, DHT22-Sensor und OLED-Display. Die Station soll Temperatur und Luftfeuchtigkeit messen und die Werte auf dem Display anzeigen. Zusätzlich soll ein einfaches Gehäuse mit separatem Display-Standfuß als OpenSCAD-Modell vorbereitet werden.
+Ein Hund-Roboter der auf Arduino Mega basiert und einen Ultraschallsensor hat um Objekten auszuweichen.
 ```
 
 Robo Forge erstellt daraus automatisch einen Projektordner mit Dokumentation, Code, Wokwi-Dateien, OpenSCAD-Modell und PDF-Bericht.
