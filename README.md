@@ -104,7 +104,7 @@ OLLAMA_MODEL=qwen3-coder:30b
 
 ```bash
 git clone https://github.com/Ragnaron12345/RoboForge
-cd robo-forge
+cd RoboForge
 ```
 
 ### 2. Virtuelle Umgebung erstellen
