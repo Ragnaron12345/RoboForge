@@ -1,0 +1,141 @@
+{
+  "platform": "robot_arm_base",
+  "controller": "arduino_uno",
+  "modules": [
+    "robot_arm_base_plate",
+    "rotating_base_servo_mount",
+    "standard_servo_u_bracket",
+    "standard_servo_u_bracket",
+    "standard_servo_u_bracket",
+    "sg90_servo_bracket",
+    "servo_horn_adapter",
+    "servo_horn_adapter",
+    "servo_horn_adapter",
+    "servo_horn_adapter",
+    "arm_link_long",
+    "arm_link_long",
+    "arm_link_long",
+    "arm_link_short",
+    "elbow_joint_plate",
+    "elbow_joint_plate",
+    "gripper_palm",
+    "gripper_finger",
+    "gripper_finger",
+    "controller_tray",
+    "servo_power_distribution_plate",
+    "battery_tray",
+    "standoffs",
+    "standoffs",
+    "screw_fit_test",
+    "potentiometer_panel"
+  ],
+  "wheel_count": 0,
+  "has_camera": false,
+  "has_battery": true,
+  "has_motor_driver": false,
+  "dimensions": {
+    "length": 150,
+    "width": 115,
+    "thickness": 4
+  },
+  "notes": "Parametrische Lernvorlage aus einer erweiterten Teilebibliothek. Stückzahlen werden geprüft, damit z. B. ein Radroboter nicht nur ein Rad bekommt.",
+  "parts": [
+    {
+      "name": "robot_arm_base_plate",
+      "quantity": 1,
+      "role": "Grundplatte für Roboterarm.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "rotating_base_servo_mount",
+      "quantity": 1,
+      "role": "Drehbasis mit Servoaufnahme.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "standard_servo_u_bracket",
+      "quantity": 3,
+      "role": "U-Halter für Hauptservos.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "sg90_servo_bracket",
+      "quantity": 1,
+      "role": "Kleiner Halter für Greifer/Handgelenk.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "servo_horn_adapter",
+      "quantity": 4,
+      "role": "Adapter für Servohörner und Gelenke.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "arm_link_long",
+      "quantity": 3,
+      "role": "Lange Armsegmente.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "arm_link_short",
+      "quantity": 1,
+      "role": "Kurzes Arm-/Handgelenksegment.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "elbow_joint_plate",
+      "quantity": 2,
+      "role": "Gelenkplatten für Schulter/Ellenbogen.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "gripper_palm",
+      "quantity": 1,
+      "role": "Greiferbasis.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "gripper_finger",
+      "quantity": 2,
+      "role": "Zwei Greiferfinger, nicht einer.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "controller_tray",
+      "quantity": 1,
+      "role": "Controllerhalter.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "servo_power_distribution_plate",
+      "quantity": 1,
+      "role": "Externe Servoversorgung.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "battery_tray",
+      "quantity": 1,
+      "role": "Akkuhalter.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "standoffs",
+      "quantity": 2,
+      "role": "Abstandshalter.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "screw_fit_test",
+      "quantity": 1,
+      "role": "Schraubentest.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "potentiometer_panel",
+      "quantity": 1,
+      "role": "Bedienpanel für manuelle Steuerung.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    }
+  ],
+  "sanity_warnings": []
+}

@@ -1,0 +1,141 @@
+{
+  "platform": "legged_robot",
+  "controller": "arduino_uno",
+  "modules": [
+    "legged_body_plate",
+    "top_cover",
+    "controller_tray",
+    "battery_tray",
+    "servo_power_distribution_plate",
+    "standard_servo_u_bracket",
+    "standard_servo_u_bracket",
+    "standard_servo_u_bracket",
+    "standard_servo_u_bracket",
+    "standard_servo_u_bracket",
+    "standard_servo_u_bracket",
+    "standard_servo_u_bracket",
+    "standard_servo_u_bracket",
+    "standard_servo_u_bracket",
+    "standard_servo_u_bracket",
+    "standard_servo_u_bracket",
+    "standard_servo_u_bracket",
+    "standard_servo_u_bracket",
+    "standard_servo_u_bracket",
+    "standard_servo_u_bracket",
+    "standard_servo_u_bracket",
+    "leg_link_long",
+    "leg_link_long",
+    "leg_link_long",
+    "leg_link_long",
+    "leg_link_long",
+    "leg_link_long",
+    "leg_link_long",
+    "leg_link_long",
+    "leg_link_short",
+    "leg_link_short",
+    "leg_link_short",
+    "leg_link_short",
+    "leg_link_short",
+    "leg_link_short",
+    "leg_link_short",
+    "leg_link_short",
+    "foot_pad",
+    "foot_pad",
+    "foot_pad",
+    "foot_pad",
+    "foot_pad",
+    "foot_pad",
+    "foot_pad",
+    "foot_pad",
+    "standoffs",
+    "standoffs",
+    "screw_fit_test",
+    "side_servo_rail",
+    "side_servo_rail"
+  ],
+  "wheel_count": 0,
+  "has_camera": false,
+  "has_battery": true,
+  "has_motor_driver": false,
+  "dimensions": {
+    "length": 150,
+    "width": 115,
+    "thickness": 4
+  },
+  "notes": "Parametrische Lernvorlage aus einer erweiterten Teilebibliothek. Stückzahlen werden geprüft, damit z. B. ein Radroboter nicht nur ein Rad bekommt.",
+  "parts": [
+    {
+      "name": "legged_body_plate",
+      "quantity": 1,
+      "role": "Zentrale Körperplatte für 8 Beine.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "top_cover",
+      "quantity": 1,
+      "role": "Deckplatte für Elektronik und Kabel.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "controller_tray",
+      "quantity": 1,
+      "role": "Halter für den gewählten Controller.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "battery_tray",
+      "quantity": 1,
+      "role": "Akkuhalter mit Gurtöffnungen.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "servo_power_distribution_plate",
+      "quantity": 1,
+      "role": "Verteilerplatte für externe Servoversorgung.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "standard_servo_u_bracket",
+      "quantity": 16,
+      "role": "Servo-U-Halter für Hüfte/Schulter/Knie.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "leg_link_long",
+      "quantity": 8,
+      "role": "Obere Beinsegmente.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "leg_link_short",
+      "quantity": 8,
+      "role": "Untere Beinsegmente.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "foot_pad",
+      "quantity": 8,
+      "role": "Druckbare Füße für jedes Bein.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "standoffs",
+      "quantity": 2,
+      "role": "Abstandshalter-Sets.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "screw_fit_test",
+      "quantity": 1,
+      "role": "Teststück für Schraubenpassung.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "side_servo_rail",
+      "quantity": 2,
+      "role": "Seitliche Servoschienen für viele Beine.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    }
+  ],
+  "sanity_warnings": []
+}

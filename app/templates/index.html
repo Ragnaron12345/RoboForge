@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Robo Forge</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="hero compact-hero">
+      <h1>Robo Forge</h1>
+    </section>
+
+    {% if status %}<div class="notice success">{{ status }}</div>{% endif %}
+    {% for warning in warnings %}<div class="notice warning">{{ warning }}</div>{% endfor %}
+
+    <section class="card">
+      <h2>Neues Projekt erstellen</h2>
+      <form method="post" action="/projects">
+        <label>Projekttitel
+          <input name="title" placeholder="Arduino Roboterarm mit Greifer" required />
+        </label>
+        <label>Kurzbeschreibung
+          <textarea name="description" rows="6" placeholder="Was soll das Projekt können? Welche Bauteile sind geplant?"></textarea>
+        </label>
+        <button type="submit">Projekt erstellen</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Projektbrowser</h2>
+      {% if projects %}
+      <div class="browser">
+        <aside class="project-list">
+          {% for project in projects %}
+            <a class="project-link {% if project == selected_project %}active{% endif %}" href="/projects/{{ project }}">{{ project }}</a>
+          {% endfor %}
+        </aside>
+        <div class="file-area">
+          {% if selected_project %}
+            <h3>{{ selected_project }}</h3>
+            <div class="action-row">
+              {% if outputs.pdf %}<a class="button-link" target="_blank" rel="noopener" href="/projects/{{ selected_project }}/open/report.pdf">PDF öffnen</a>{% endif %}
+              {% if outputs.wokwi %}<a class="button-link" target="_blank" rel="noopener" href="/projects/{{ selected_project }}/wokwi">diagram.json für Wokwi kopieren</a>{% endif %}
+              {% if outputs.scad %}
+                <form method="post" action="/projects/{{ selected_project }}/open-model-local"><button type="submit" class="secondary">model.scad in OpenSCAD öffnen</button></form>
+              {% endif %}
+            </div>
+
+            <div class="file-editor-grid">
+              <nav class="file-list">
+                {% for file in project_files %}
+                  <a class="file-link {% if file == selected_file %}active{% endif %}" href="/projects/{{ selected_project }}?file={{ file|urlencode }}">{{ file }}</a>
+                {% endfor %}
+              </nav>
+
+              <section class="editor">
+                {% if selected_file %}
+                  <h3>{{ selected_file }}</h3>
+                  <form method="post" action="/projects/{{ selected_project }}/save">
+                    <input type="hidden" name="filename" value="{{ selected_file }}" />
+                    <textarea name="content" rows="24">{{ file_content }}</textarea>
+                    <button type="submit">Änderungen speichern</button>
+                  </form>
+                {% else %}
+                  <p class="muted">Wähle eine Datei aus.</p>
+                {% endif %}
+              </section>
+            </div>
+          {% else %}
+            <p class="muted">Wähle ein Projekt aus der Liste.</p>
+          {% endif %}
+        </div>
+      </div>
+      {% else %}
+        <p class="muted">Noch keine Projekte vorhanden.</p>
+      {% endif %}
+    </section>
+  </main>
+</body>
+</html>

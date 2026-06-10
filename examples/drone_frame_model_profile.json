@@ -1,0 +1,83 @@
+{
+  "platform": "drone_frame",
+  "controller": "esp32",
+  "modules": [
+    "x_frame_plate",
+    "motor_pod",
+    "motor_pod",
+    "motor_pod",
+    "motor_pod",
+    "prop_guard_segment",
+    "prop_guard_segment",
+    "prop_guard_segment",
+    "prop_guard_segment",
+    "controller_tray",
+    "battery_strap_plate",
+    "standoffs",
+    "screw_fit_test",
+    "base_plate"
+  ],
+  "wheel_count": 0,
+  "has_camera": false,
+  "has_battery": true,
+  "has_motor_driver": false,
+  "dimensions": {
+    "length": 140,
+    "width": 140,
+    "thickness": 4
+  },
+  "notes": "Parametrische Lernvorlage aus einer erweiterten Teilebibliothek. Stückzahlen werden geprüft, damit z. B. ein Radroboter nicht nur ein Rad bekommt.",
+  "parts": [
+    {
+      "name": "x_frame_plate",
+      "quantity": 1,
+      "role": "X-Rahmenplatte für Drohnenkonzept.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "motor_pod",
+      "quantity": 4,
+      "role": "Vier Motorpods, nicht einer.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "prop_guard_segment",
+      "quantity": 4,
+      "role": "Vier einfache Propeller-Schutzsegmente.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "controller_tray",
+      "quantity": 1,
+      "role": "Controllerhalter.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "battery_strap_plate",
+      "quantity": 1,
+      "role": "Akku-Gurtplatte.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "standoffs",
+      "quantity": 1,
+      "role": "Abstandshalter.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "screw_fit_test",
+      "quantity": 1,
+      "role": "Schraubentest.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "base_plate",
+      "quantity": 1,
+      "role": "Montageplatte.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    }
+  ],
+  "sanity_warnings": [
+    "base_plate: fehlendes Pflichtteil ergänzt (1x)."
+  ]
+}

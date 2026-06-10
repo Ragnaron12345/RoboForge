@@ -1,0 +1,93 @@
+{
+  "platform": "sensor_box",
+  "controller": "esp32",
+  "modules": [
+    "bottom_shell",
+    "lid",
+    "controller_tray",
+    "battery_tray",
+    "display_bezel",
+    "small_sensor_clip",
+    "small_sensor_clip",
+    "small_sensor_clip",
+    "weather_louver",
+    "cable_clip_set",
+    "standoffs",
+    "screw_fit_test"
+  ],
+  "wheel_count": 0,
+  "has_camera": false,
+  "has_battery": true,
+  "has_motor_driver": false,
+  "dimensions": {
+    "length": 120,
+    "width": 90,
+    "thickness": 4
+  },
+  "notes": "Parametrische Lernvorlage aus einer erweiterten Teilebibliothek. Stückzahlen werden geprüft, damit z. B. ein Radroboter nicht nur ein Rad bekommt.",
+  "parts": [
+    {
+      "name": "bottom_shell",
+      "quantity": 1,
+      "role": "Gehäuseunterteil.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "lid",
+      "quantity": 1,
+      "role": "Deckel.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "controller_tray",
+      "quantity": 1,
+      "role": "Controllerhalter im Gehäuse.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "battery_tray",
+      "quantity": 1,
+      "role": "Akkuhalter.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "display_bezel",
+      "quantity": 1,
+      "role": "Displayrahmen.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "small_sensor_clip",
+      "quantity": 3,
+      "role": "Sensorclips.; Sensorclip.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "weather_louver",
+      "quantity": 1,
+      "role": "Einfache Wetterschutz-Lamellen.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "cable_clip_set",
+      "quantity": 1,
+      "role": "Kabelclips.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "standoffs",
+      "quantity": 1,
+      "role": "Abstandshalter.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "screw_fit_test",
+      "quantity": 1,
+      "role": "Schraubentest.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    }
+  ],
+  "sanity_warnings": [
+    "display_bezel: doppelte Einträge auf 1 reduziert."
+  ]
+}

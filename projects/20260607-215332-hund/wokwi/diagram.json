@@ -1,0 +1,668 @@
+{
+  "version": 1,
+  "author": "RoboForge Local",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-arduino-mega",
+      "id": "mega",
+      "top": 125,
+      "left": 25,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-text",
+      "id": "lbl_controller",
+      "top": 80,
+      "left": 25,
+      "attrs": {
+        "text": "ARDUINO MEGA"
+      }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "lbl_power",
+      "top": 25,
+      "left": 350,
+      "attrs": {
+        "text": "External servo power 5V"
+      }
+    },
+    {
+      "type": "wokwi-vcc",
+      "id": "logic_vcc",
+      "top": 75,
+      "left": 245,
+      "attrs": {
+        "value": "5V"
+      }
+    },
+    {
+      "type": "wokwi-gnd",
+      "id": "logic_gnd",
+      "top": 365,
+      "left": 245,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-battery",
+      "id": "servo_bat",
+      "top": 80,
+      "left": 380,
+      "attrs": {
+        "voltage": "5"
+      }
+    },
+    {
+      "type": "wokwi-gnd",
+      "id": "power_gnd",
+      "top": 365,
+      "left": 380,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-text",
+      "id": "lbl_servo1",
+      "top": 42,
+      "left": 620,
+      "attrs": {
+        "text": "Base"
+      }
+    },
+    {
+      "type": "wokwi-servo",
+      "id": "servo1",
+      "top": 80,
+      "left": 620,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-text",
+      "id": "lbl_servo2",
+      "top": 197,
+      "left": 620,
+      "attrs": {
+        "text": "Shoulder"
+      }
+    },
+    {
+      "type": "wokwi-servo",
+      "id": "servo2",
+      "top": 235,
+      "left": 620,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-text",
+      "id": "lbl_servo3",
+      "top": 352,
+      "left": 620,
+      "attrs": {
+        "text": "Elbow"
+      }
+    },
+    {
+      "type": "wokwi-servo",
+      "id": "servo3",
+      "top": 390,
+      "left": 620,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-text",
+      "id": "lbl_servo4",
+      "top": 507,
+      "left": 620,
+      "attrs": {
+        "text": "Gripper"
+      }
+    },
+    {
+      "type": "wokwi-servo",
+      "id": "servo4",
+      "top": 545,
+      "left": 620,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-text",
+      "id": "lbl_servo5",
+      "top": 42,
+      "left": 870,
+      "attrs": {
+        "text": "Wrist"
+      }
+    },
+    {
+      "type": "wokwi-servo",
+      "id": "servo5",
+      "top": 80,
+      "left": 870,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-text",
+      "id": "lbl_servo6",
+      "top": 197,
+      "left": 870,
+      "attrs": {
+        "text": "Aux"
+      }
+    },
+    {
+      "type": "wokwi-servo",
+      "id": "servo6",
+      "top": 235,
+      "left": 870,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-text",
+      "id": "lbl_servo7",
+      "top": 352,
+      "left": 870,
+      "attrs": {
+        "text": "Servo 7"
+      }
+    },
+    {
+      "type": "wokwi-servo",
+      "id": "servo7",
+      "top": 390,
+      "left": 870,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-text",
+      "id": "lbl_servo8",
+      "top": 507,
+      "left": 870,
+      "attrs": {
+        "text": "Servo 8"
+      }
+    },
+    {
+      "type": "wokwi-servo",
+      "id": "servo8",
+      "top": 545,
+      "left": 870,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-text",
+      "id": "lbl_mpu60501",
+      "top": 42,
+      "left": 1120,
+      "attrs": {
+        "text": "MPU6050 / I2C IMU"
+      }
+    },
+    {
+      "type": "wokwi-mpu6050",
+      "id": "imu1",
+      "top": 80,
+      "left": 1120,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-text",
+      "id": "lbl_dht221",
+      "top": 197,
+      "left": 1120,
+      "attrs": {
+        "text": "DHT22"
+      }
+    },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht1",
+      "top": 235,
+      "left": 1120,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-text",
+      "id": "lbl_oled1",
+      "top": 352,
+      "left": 1120,
+      "attrs": {
+        "text": "OLED SSD1306"
+      }
+    },
+    {
+      "type": "board-ssd1306",
+      "id": "oled1",
+      "top": 390,
+      "left": 1120,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-text",
+      "id": "lbl_pir1",
+      "top": 507,
+      "left": 1120,
+      "attrs": {
+        "text": "PIR"
+      }
+    },
+    {
+      "type": "wokwi-pir-motion-sensor",
+      "id": "pir1",
+      "top": 545,
+      "left": 1120,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-text",
+      "id": "lbl_ldr1",
+      "top": 42,
+      "left": 1370,
+      "attrs": {
+        "text": "LDR"
+      }
+    },
+    {
+      "type": "wokwi-photoresistor-sensor",
+      "id": "ldr1",
+      "top": 80,
+      "left": 1370,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-text",
+      "id": "lbl_led1",
+      "top": 197,
+      "left": 1370,
+      "attrs": {
+        "text": "LED"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 240,
+      "left": 1370,
+      "attrs": {
+        "value": "220"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": 240,
+      "left": 1500,
+      "attrs": {
+        "color": "red"
+      }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "lbl_button1",
+      "top": 352,
+      "left": 1370,
+      "attrs": {
+        "text": "Button"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 390,
+      "left": 1370,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    [
+      "mega:5V",
+      "logic_vcc:VCC",
+      "red",
+      [
+        "h165",
+        "v-70"
+      ]
+    ],
+    [
+      "mega:GND.1",
+      "logic_gnd:GND",
+      "black",
+      [
+        "h170",
+        "v150"
+      ]
+    ],
+    [
+      "logic_gnd:GND",
+      "power_gnd:GND",
+      "black",
+      [
+        "h140"
+      ]
+    ],
+    [
+      "servo_bat:+",
+      "servo1:V+",
+      "red",
+      [
+        "h120"
+      ]
+    ],
+    [
+      "servo_bat:-",
+      "servo1:GND",
+      "black",
+      [
+        "h120"
+      ]
+    ],
+    [
+      "mega:22",
+      "servo1:PWM",
+      "orange",
+      [
+        "h450"
+      ]
+    ],
+    [
+      "servo_bat:+",
+      "servo2:V+",
+      "red",
+      [
+        "h120"
+      ]
+    ],
+    [
+      "servo_bat:-",
+      "servo2:GND",
+      "black",
+      [
+        "h120"
+      ]
+    ],
+    [
+      "mega:23",
+      "servo2:PWM",
+      "orange",
+      [
+        "h450"
+      ]
+    ],
+    [
+      "servo_bat:+",
+      "servo3:V+",
+      "red",
+      [
+        "h120"
+      ]
+    ],
+    [
+      "servo_bat:-",
+      "servo3:GND",
+      "black",
+      [
+        "h120"
+      ]
+    ],
+    [
+      "mega:24",
+      "servo3:PWM",
+      "orange",
+      [
+        "h450"
+      ]
+    ],
+    [
+      "servo_bat:+",
+      "servo4:V+",
+      "red",
+      [
+        "h120"
+      ]
+    ],
+    [
+      "servo_bat:-",
+      "servo4:GND",
+      "black",
+      [
+        "h120"
+      ]
+    ],
+    [
+      "mega:25",
+      "servo4:PWM",
+      "orange",
+      [
+        "h450"
+      ]
+    ],
+    [
+      "servo_bat:+",
+      "servo5:V+",
+      "red",
+      [
+        "h120"
+      ]
+    ],
+    [
+      "servo_bat:-",
+      "servo5:GND",
+      "black",
+      [
+        "h120"
+      ]
+    ],
+    [
+      "mega:26",
+      "servo5:PWM",
+      "orange",
+      [
+        "h450"
+      ]
+    ],
+    [
+      "servo_bat:+",
+      "servo6:V+",
+      "red",
+      [
+        "h120"
+      ]
+    ],
+    [
+      "servo_bat:-",
+      "servo6:GND",
+      "black",
+      [
+        "h120"
+      ]
+    ],
+    [
+      "mega:27",
+      "servo6:PWM",
+      "orange",
+      [
+        "h450"
+      ]
+    ],
+    [
+      "servo_bat:+",
+      "servo7:V+",
+      "red",
+      [
+        "h120"
+      ]
+    ],
+    [
+      "servo_bat:-",
+      "servo7:GND",
+      "black",
+      [
+        "h120"
+      ]
+    ],
+    [
+      "mega:28",
+      "servo7:PWM",
+      "orange",
+      [
+        "h450"
+      ]
+    ],
+    [
+      "servo_bat:+",
+      "servo8:V+",
+      "red",
+      [
+        "h120"
+      ]
+    ],
+    [
+      "servo_bat:-",
+      "servo8:GND",
+      "black",
+      [
+        "h120"
+      ]
+    ],
+    [
+      "mega:29",
+      "servo8:PWM",
+      "orange",
+      [
+        "h450"
+      ]
+    ],
+    [
+      "logic_vcc:VCC",
+      "imu1:VCC",
+      "red",
+      []
+    ],
+    [
+      "logic_gnd:GND",
+      "imu1:GND",
+      "black",
+      []
+    ],
+    [
+      "mega:A4",
+      "imu1:SDA",
+      "green",
+      []
+    ],
+    [
+      "mega:A5",
+      "imu1:SCL",
+      "blue",
+      []
+    ],
+    [
+      "logic_vcc:VCC",
+      "dht1:VCC",
+      "red",
+      []
+    ],
+    [
+      "logic_gnd:GND",
+      "dht1:GND",
+      "black",
+      []
+    ],
+    [
+      "mega:30",
+      "dht1:SDA",
+      "green",
+      []
+    ],
+    [
+      "logic_vcc:VCC",
+      "oled1:VCC",
+      "red",
+      []
+    ],
+    [
+      "logic_gnd:GND",
+      "oled1:GND",
+      "black",
+      []
+    ],
+    [
+      "mega:A4",
+      "oled1:SDA",
+      "green",
+      []
+    ],
+    [
+      "mega:A5",
+      "oled1:SCL",
+      "blue",
+      []
+    ],
+    [
+      "logic_vcc:VCC",
+      "pir1:VCC",
+      "red",
+      []
+    ],
+    [
+      "logic_gnd:GND",
+      "pir1:GND",
+      "black",
+      []
+    ],
+    [
+      "mega:31",
+      "pir1:OUT",
+      "green",
+      []
+    ],
+    [
+      "logic_vcc:VCC",
+      "ldr1:VCC",
+      "red",
+      []
+    ],
+    [
+      "logic_gnd:GND",
+      "ldr1:GND",
+      "black",
+      []
+    ],
+    [
+      "mega:32",
+      "ldr1:AO",
+      "green",
+      []
+    ],
+    [
+      "mega:33",
+      "r1:1",
+      "green",
+      []
+    ],
+    [
+      "r1:2",
+      "led1:A",
+      "green",
+      []
+    ],
+    [
+      "led1:C",
+      "logic_gnd:GND",
+      "black",
+      []
+    ],
+    [
+      "mega:34",
+      "btn1:1.l",
+      "blue",
+      []
+    ],
+    [
+      "btn1:2.r",
+      "logic_gnd:GND",
+      "black",
+      []
+    ]
+  ],
+  "dependencies": {}
+}

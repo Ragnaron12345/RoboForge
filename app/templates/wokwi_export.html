@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wokwi Export</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <main class="page narrow">
+    <section class="hero">
+      <p class="eyebrow">RoboForge Local · Wokwi Export</p>
+      <h1>diagram.json kopieren</h1>
+      <p class="subtitle">Projekt: {{ project_name }}</p>
+    </section>
+    <section class="card">
+      <p>1. Klicke auf Kopieren. 2. Öffne Wokwi Web. 3. Ersetze dort den Inhalt von <code>diagram.json</code> mit diesem JSON.</p>
+      <div class="action-row">
+        <button onclick="copyDiagram()">diagram.json kopieren</button>
+        <a class="button-link" target="_blank" href="https://wokwi.com/projects/new/esp32">Wokwi Web öffnen</a>
+        <a class="button-link" href="/projects/{{ project_name }}">Zurück</a>
+      </div>
+      <textarea id="diagram" rows="28" readonly>{{ diagram_text }}</textarea>
+    </section>
+  </main>
+  <script>
+    async function copyDiagram() {
+      const text = document.getElementById('diagram').value;
+      try {
+        await navigator.clipboard.writeText(text);
+        alert('diagram.json wurde kopiert.');
+      } catch (e) {
+        document.getElementById('diagram').select();
+        document.execCommand('copy');
+        alert('diagram.json wurde markiert/kopiert.');
+      }
+    }
+  </script>
+</body>
+</html>

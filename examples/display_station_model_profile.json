@@ -1,0 +1,78 @@
+{
+  "platform": "display_station",
+  "controller": "arduino_uno",
+  "modules": [
+    "base_plate",
+    "display_bezel",
+    "display_stand",
+    "display_stand",
+    "controller_tray",
+    "battery_tray",
+    "cable_clip_set",
+    "standoffs",
+    "screw_fit_test"
+  ],
+  "wheel_count": 0,
+  "has_camera": false,
+  "has_battery": true,
+  "has_motor_driver": false,
+  "dimensions": {
+    "length": 120,
+    "width": 85,
+    "thickness": 4
+  },
+  "notes": "Parametrische Lernvorlage aus einer erweiterten Teilebibliothek. Stückzahlen werden geprüft, damit z. B. ein Radroboter nicht nur ein Rad bekommt.",
+  "parts": [
+    {
+      "name": "base_plate",
+      "quantity": 1,
+      "role": "Basisplatte.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "display_bezel",
+      "quantity": 1,
+      "role": "Displayrahmen.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "display_stand",
+      "quantity": 2,
+      "role": "Zwei Standfüße für Display/Panel.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "controller_tray",
+      "quantity": 1,
+      "role": "Controllerhalter.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "battery_tray",
+      "quantity": 1,
+      "role": "Akkuhalter.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "cable_clip_set",
+      "quantity": 1,
+      "role": "Kabelclips.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "standoffs",
+      "quantity": 1,
+      "role": "Abstandshalter.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "screw_fit_test",
+      "quantity": 1,
+      "role": "Schraubentest.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    }
+  ],
+  "sanity_warnings": [
+    "display_bezel: doppelte Einträge auf 1 reduziert."
+  ]
+}

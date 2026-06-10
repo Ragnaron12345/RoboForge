@@ -1,0 +1,99 @@
+{
+  "platform": "generic_chassis",
+  "controller": "arduino_uno",
+  "modules": [
+    "base_plate",
+    "top_cover",
+    "controller_tray",
+    "battery_tray",
+    "universal_l_bracket",
+    "universal_l_bracket",
+    "universal_u_bracket",
+    "universal_u_bracket",
+    "sensor_bracket",
+    "cable_clip_set",
+    "standoffs",
+    "standoffs",
+    "screw_fit_test",
+    "relay_module_tray"
+  ],
+  "wheel_count": 0,
+  "has_camera": false,
+  "has_battery": true,
+  "has_motor_driver": false,
+  "dimensions": {
+    "length": 125,
+    "width": 90,
+    "thickness": 4
+  },
+  "notes": "Parametrische Lernvorlage aus einer erweiterten Teilebibliothek. Stückzahlen werden geprüft, damit z. B. ein Radroboter nicht nur ein Rad bekommt.",
+  "parts": [
+    {
+      "name": "base_plate",
+      "quantity": 1,
+      "role": "Universelle Montageplatte.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "top_cover",
+      "quantity": 1,
+      "role": "Optionale Deck-/Trägerplatte.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "controller_tray",
+      "quantity": 1,
+      "role": "Controllerhalter.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "battery_tray",
+      "quantity": 1,
+      "role": "Akkuhalter.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "universal_l_bracket",
+      "quantity": 2,
+      "role": "Zwei L-Winkel.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "universal_u_bracket",
+      "quantity": 2,
+      "role": "Zwei U-Winkel.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "sensor_bracket",
+      "quantity": 1,
+      "role": "Universeller Sensorhalter.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "cable_clip_set",
+      "quantity": 1,
+      "role": "Kabelclips.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "standoffs",
+      "quantity": 2,
+      "role": "Abstandshalter.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "screw_fit_test",
+      "quantity": 1,
+      "role": "Schraubentest.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    },
+    {
+      "name": "relay_module_tray",
+      "quantity": 1,
+      "role": "Relaismodulhalter.",
+      "check": "Maße, Bohrungen und Druckausrichtung prüfen."
+    }
+  ],
+  "sanity_warnings": []
+}
