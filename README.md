@@ -103,7 +103,7 @@ OLLAMA_MODEL=qwen3-coder:30b
 ### 1. Repository klonen
 
 ```bash
-git clone <GITHUB-REPOSITORY-URL>
+git clone https://github.com/Ragnaron12345/RoboForge/tree/main
 cd robo-forge
 ```
 
